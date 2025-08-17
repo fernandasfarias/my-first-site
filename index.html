@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- metadata -->
+    <head>
+        <title>Quiz for programmers</title>
+        <meta name="description" content="An interactive quiz to test your knowledge.">
+    </head>
+    <!-- Visual -->
+    <body>
+        <header> <!-- semantic tag-->
+            <h1>Interactive quiz for programmers</h1>
+            <p>Test your programming knowledge and see how many points you can make!</p>
+        </header>
+        <main> <!-- semantic tag -->
+            <section> <!-- semantic tag -->
+                <h2>About the quiz:</h2>
+                <p><strong>this quiz</strong> was designed to test your programming knowledge.</p>
+                <p>Here you'll find different kinds of questions, such as multiple choice, text and date-related questions. <br> Challenge yourself with this quiz!</p>
+                <p>You'll encounter <em>acronyms</em>, such as <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>, wich are commonly used in web development questions.</p>
+            </section>
+
+            <!--Question 1: multiple choice-->
+            <section>
+                <h2>Question 1: Which language is most commonly used to structure web pages?</h2>
+                <form>
+                    <input type="radio" value="Python" id="q1a" name="Question1">
+                    <label for="q1a">Python</label><br>
+                    <input type="radio" value="HTML" id="q1b" name="Question1">
+                    <label for="q1b">HTML</label><br>
+                    <input type="radio" value="JavaScript" id="q1c" name="Question1">
+                    <label for="q1c">Javascript</label><br>
+                    <input type="radio" value="Ruby" id="q1d" name="Question1">
+                    <label for="q1d">Ruby</label><br>
+                </form>
+            </section>
+
+            <!--Question 2: text -->
+            <section>
+                <h2>Question 2: In the URL https://www.google.com the part "google.com" is ___</h2>
+                <form>
+                    <input type="text" id="q2" name="question2" placeholder="Type your answer...">
+                </form>
+            </section>
+
+            <!--Question 3: password-->
+            <section>
+                <h2>Question 3: Type an example of a strong password.</h2>
+                <form>
+                    <input type="password" id="q3" name="question3" placeholder="Type a password...">
+                </form>
+            </section>
+
+            <!--Question 4: data-->
+            <section>
+                <h2>Question 4: In which year did HTML release its first version?</h2>
+                <form>
+                    <input type="date" id="q4" name="question4">
+                </form>
+            </section>
+
+            <!--Question 5: multiple selection-->
+            <section>
+                <h2>Question 5: Which of the following languages are programming languages?</h2
+                <form>
+                    <input type="checkbox" id="q5a" name="question 5" value="JavaScript">
+                    <label for="q5a">JavaScript</label><br>
+                    <input type="checkbox" id="q5b" name="question 5" value="HTML">
+                    <label for="q5b">HTML</label><br>
+                    <input type="checkbox" id="q5c" name="question 5" value="Java">
+                    <label for="q5c">Java</label><br>
+                    <input type="checkbox" id="q5d" name="question 5" value="CSS">
+                    <label for="q5d">CSS</label><br>
+                </form>
+            </section>
+
+            <!-- Question 6: file upload-->
+            <section>
+                <h2>Question 6: Upload an HTML file</h2>
+                <form>
+                    <input type="file" if="q6" name="question 6">
+                </form>
+            </section>
+            
+            <!-- Question 7: dropdown -->
+            <section>
+                <h2>Question 7: Select the input attribute that defines its type.</h2>
+                <form>
+                    <select name="question 7" id="q7">
+                        <option value="id">id</option>
+                        <option value="type">type</option>
+                        <option value="placeholder">placeholder</option>
+                    </select>
+                </form>
+            </section>
+            
+            <!-- Question 8: Image-->
+            <section>
+                <h2>Question 8: Which programming language is represented by the following image:</h2>
+                <figure>
+                    <img src="java.png" alt="logotype of a programming language"><br>
+                    <figcaption>Image 1: Logotype of a programming language</figcaption>
+                </figure>
+                <form>
+                    <input type="text" name="question 8" id="q8" placeholder="Type your answer...">
+                </form>
+            </section>
+
+            <!--Punctuation table-->
+            <section>
+                <h2>Punctuation table</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Punctuation</th>
+                            <th>Evaluation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0-2</td>
+                            <td>Don't give up! Every attempt is a opportunity for you to learn!</td>
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>You still have to improve your knowledge. How about studying more about programming? </td>
+                        </tr>
+                        <tr>
+                            <td>5-7</td>
+                            <td>Good! Your knowledge about programming is satisfactory.</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Perfect! You're very well informed about programming!</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Good luck next time! Study more to improve your knowledge!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+             
+            <!-- answer list-->
+            <section>
+                <h2>Check your answers!</h2>
+                <details>
+                    <summary>Click here to see the answers!</summary>
+                    <ol>
+                        <li>HTML</li>
+                        <li>Domain</li>
+                        <li>Ab87&%ç!</li>
+                        <li>1991</li>
+                        <li>Javascript, Java</li>
+                        <li>The File must have a .html extension</li>
+                        <li>type</li>
+                        <li>Java</li>
+                    </ol>
+                </details>
+            </section>
+
+            <!--Feedback form-->
+            <section>
+                <h2>Give your feedback!</h2>
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="comment">Comment:</label><br>
+                        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Type your comments here:"></textarea><br>
+                        <button onclick="alert('FEEDBACK SENT')">Send your feedback!</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>  <!-- semantic tag -->
+            <p>&copy Programmer's quiz. All rights reserved.</p>
+            <p>To know more about me, <a href="aboutme.html" target="_blank">click here</a></p>
+        </footer>
+    </body>
+</html>
